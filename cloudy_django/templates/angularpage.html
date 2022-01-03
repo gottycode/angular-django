@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block headtitle %}{{ block.super }} -アンギュラー{% endblock %}
+{% block pagetitle_body %}angular!{% endblock %}
+
+{% block pagehead %}
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+<link rel="stylesheet" href="{% static 'angular/styles.css' %}">
+
+{% endblock %}
+
+{% block content %}
+<app-root></app-root>
+{% endblock %}
+
+{% block pagejs %}
+<script type="text/javascript" src="{% static 'angular/runtime.js' %}"></script>
+<script type="text/javascript" src="{% static 'angular/polyfills.js' %}"></script>
+<script type="text/javascript" src="{% static 'angular/main.js' %}"></script>
+{% endblock %}

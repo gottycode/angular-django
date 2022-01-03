@@ -1,0 +1,55 @@
+<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+  <div class="position-sticky pt-3">
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/groups">
+          <span data-feather="home"></span>
+          angularグループ一覧
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/users">
+          <span data-feather="home"></span>
+          angularユーザー一覧
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'djangomenu1' %}">
+          <span data-feather="file"></span>
+          Djangoメニュー１
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'djangomenu2' %}">
+          <span data-feather="shopping-cart"></span>
+          Djangoメニュー２
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/webtest/">
+          <span data-feather="shopping-cart"></span>
+          Djangoメニュー３
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/apitest/users/">
+          <span data-feather="shopping-cart"></span>
+          APIユーザー一覧
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/apitest/groups/">
+          <span data-feather="shopping-cart"></span>
+          APIグループ一覧
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/admin/">
+          <span data-feather="shopping-cart"></span>
+          Admin
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
